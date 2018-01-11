@@ -41,7 +41,7 @@
     <properties>
         <dropwizard.version>1.0.2</dropwizard.version>
         <validation-api.version>1.1.0.Final</validation-api.version>
-        <jackson.version>2.8.3</jackson.version>
+        <jackson.version>2.9.3</jackson.version>
         <logstash-logback-encoder.version>4.11</logstash-logback-encoder.version>
         <logback.version>1.2.3</logback.version>
     </properties>
@@ -67,6 +67,7 @@
             <artifactId>validation-api</artifactId>
             <version>${validation-api.version}</version>
         </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
@@ -76,6 +77,14 @@
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>${logstash-logback-encoder.version}</version>
+            <exclusions>
+                <exclusion>
+                    <dependency>
+                          <groupId>com.fasterxml.jackson.core</groupId>
+                          <artifactId>jackson-databind</artifactId>
+                    </dependency>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
