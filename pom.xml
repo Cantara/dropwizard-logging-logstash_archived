@@ -43,7 +43,7 @@
         <validation-api.version>1.1.0.Final</validation-api.version>
         <jackson.version>2.8.3</jackson.version>
         <logstash-logback-encoder.version>4.7</logstash-logback-encoder.version>
-        <logback.version>1.1.7</logback.version>
+        <logback.version>1.2.3</logback.version>
     </properties>
 
     <dependencies>
