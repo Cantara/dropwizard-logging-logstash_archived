@@ -5,7 +5,7 @@
     <parent>
         <groupId>no.cantara.emi</groupId>
         <artifactId>parent</artifactId>
-        <version>6</version>
+        <version>8</version>
     </parent>
 
     <groupId>no.cantara</groupId>
@@ -27,14 +27,14 @@
             <releases><enabled>true</enabled></releases>
             <snapshots><enabled>false</enabled></snapshots>
             <name>Cantara Release Repository</name>
-            <url>http://mvnrepo.cantara.no/content/repositories/releases/</url>
+            <url>https://mvnrepo.cantara.no/content/repositories/releases/</url>
         </repository>
         <repository>
             <id>cantara-snapshots</id>
             <releases><enabled>false</enabled></releases>
             <snapshots><enabled>true</enabled></snapshots>
             <name>Cantara Release Repository</name>
-            <url>http://mvnrepo.cantara.no/content/repositories/snapshots/</url>
+            <url>https://mvnrepo.cantara.no/content/repositories/snapshots/</url>
         </repository>
     </repositories>
 
@@ -51,6 +51,10 @@
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-logging</artifactId>
             <version>${dropwizard.version}</version>
+            <exclusion>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+            </exclusion>
         </dependency>
         <dependency>
             <groupId>io.dropwizard</groupId>
@@ -71,6 +75,11 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
+            <version>${jackson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
         </dependency>
         <dependency>
