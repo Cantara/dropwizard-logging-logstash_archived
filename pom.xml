@@ -40,7 +40,7 @@
 
     <properties>
         <dropwizard.version>2.0.14</dropwizard.version>
-        <validation-api.version>1.1.0.Final</validation-api.version>
+        <validation-api.version>2.0.1.Final</validation-api.version>
         <jackson.version>2.11.3</jackson.version>
         <logstash-logback-encoder.version>4.11</logstash-logback-encoder.version>
         <logback.version>1.2.3</logback.version>
