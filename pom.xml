@@ -39,7 +39,7 @@
     </repositories>
 
     <properties>
-        <dropwizard.version>2.1.0</dropwizard.version>
+        <dropwizard.version>2.1.1</dropwizard.version>
         <validation-api.version>2.0.1.Final</validation-api.version>
         <jackson.version>2.13.3</jackson.version>
         <logstash-logback-encoder.version>7.2</logstash-logback-encoder.version>
